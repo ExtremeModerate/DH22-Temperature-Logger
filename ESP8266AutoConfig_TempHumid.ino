@@ -63,7 +63,7 @@ void setup() {
   //Local intialization. Once its business is done, there is no need to keep it around
   WiFiManager wifiManager;
   //reset settings - for testing
-  //wifiManager.resetSettings();
+  wifiManager.resetSettings();
 
   //set callback that gets called when connecting to previous WiFi fails, and enters Access Point mode
   wifiManager.setAPCallback(configModeCallback);
